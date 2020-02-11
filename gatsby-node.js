@@ -14,7 +14,7 @@ exports.sourceNodes = async ({
 }) => {
   const { createNode } = actions
 
-  const res = await fetch(`https://gitconnected.com/v1/api/resume/${username}`)
+  const res = await fetch(`https://gitconnected.com/v1/portfolio/sivathangeswaran`)
   const user = await res.json()
   const nodeContent = JSON.stringify(user)
 
